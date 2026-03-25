@@ -13,25 +13,25 @@
 	<main>
 		<form action="#" method=post>
 			<fieldset>
-				<legend>Contact Me:</legend>
-				<label for = lname>First Name:</label>
+				<legend>Your Contact:</legend>
+				<label for = fname id="labelfname">First Name:</label>
 				<input type="text" id=fname name=fname placeholder="First Name"><br><br>
 
-				<label for = lname>Last Name:</label>
+				<label for = lname id="labellname">Last Name:</label>
 				<input type="text" id=lname name=lname placeholder="Last Name" style=""><br><br>
 
-				<label for = email>E-mail:</label>
+				<label for = email id="labelemail">E-mail:</label>
 				<input type="email" id=email name=email placeholder="E-Mail"><br><br>
 
-				<label for = telNo>Telephone Number:</label>
+				<label for = telNo id="labeltelNo">Telephone Number:</label>
 				<input type="tel" id=telNo name=telNo placeholder="Tel Num."><br><br>
 
-				<label for = date>Date to Contact You:</label>
+				<label for = date id="labeldate">Date to Contact You:</label>
 				<input type="date" id=date name=date><br><br>
 
 				
 				
-				<label for=contactinfo>Other ways to contact me:</label><br>
+				<label for=contactinfo id="labelcontact">Other ways to contact me:</label><br>
 					<input type = "checkbox" id="instagram" name="contactinfo" value="instagram">
 					<label for="instagram">Instagram</label><br>
 
@@ -41,7 +41,7 @@
 					<input type = "checkbox" id="Others" name="contactinfo" value="Others">
 					<label for="Others">Others</label><br><br>
 
-				<label for=role>I am a:</label><br>
+				<label for=role id="labelrole">I am a:</label><br>
 					<input type="radio" id="employer" name="role" value="employer">
 					<label for="employer">Employer</label><br>
 
@@ -51,7 +51,7 @@
 					<input type="radio" id="employer" name = "role" value="Client">
 					<label for="client">Client</label><br><br>
 				
-				<label for = inquiriestype>What type of inquiries:</label>
+				<label for = inquiriestype id="labelinquiries">What type of inquiries:</label>
 				<select name = inquiriestype id = inquiriestype>
 					<optgroup label = "More About Me">
 						<option value = Background>Background</option>
@@ -64,17 +64,17 @@
 						<option value = Others>Others</option>
 				</select><br><br>
 
-				<label for = message>If you have any inquiries:</label>
+				<label for = message id="labelmessage">If you have any inquiries:</label>
 				<input type="textarea" id=message name=message maxlength=400 placeholder="Fill in your message here(400 characters)"><br><br>
 
-				<label for = urgent>How urgent is your inquiries?</label>
+				<label for = urgent id="labelurgent">How urgent is your inquiries?</label>
 				<input type = "number" id="urgent" name="urgent" placeholder="Type in from 1-10"><br><br>
 				</fieldset>
 				
 				<input type="checkbox" id=privacy name=privacy_agreement>
-				<label for = privacy>I hereby agree that the information I submitted are valid and given permission to be contacted by the provided information</label><br><br>
+				<label for = privacy id="labelprivacy">I hereby agree that the information I submitted are valid and given permission to be contacted by the provided information</label><br><br>
 
-				<label for="satisfaction">How satisfied are you with this contact information?</label><br>
+				<label for="satisfaction" id="labelsatisfaction">How satisfied are you with this contact information?</label><br>
 				<input type="range" id="satisfaction" name = "satisfaction" min="1" max="10" step="1" value="6"><br><br>
 
 				<button type="submit">Submit</button> 

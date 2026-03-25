@@ -6,8 +6,9 @@ html{
 }
 
 :root {
- --color-primary: #E85D04;
- --color-secondary: #6A040F;
+ --color-primary: #6A040F;
+ --color-secondary: #370617;
+ --color-tertiary:#03071E;
 
  --color-accent: #FAA307;
  --color-accent2:#D00000;
@@ -19,16 +20,142 @@ html{
  --font-body: 'Quicksand', sans-serif;
  --font-heading: 'Fredoka', sans-serif;
 
- --space-sm: 0.5rem;
- --space-md: 1.5rem;
- --space-lg: 3rem;
+ --space-sm: 2rem;
+ --space-md: 3rem;
+ --space-lg: 5rem;
+ --space-xlg:8rem;
 }
 
-*{
-	width:300px;
-  	height:100px;
+body{
+	width:70rem;
+  	height:10rem;
   	padding:0;
   	margin:0;
- 	border:1px #6A040F;
+ 	border:0.1rem #6A040F;
 	box-sizing:border-box;
+}
+
+h1, legend{
+	font-size:rem(9rem,5rem);
+	line-height:var(--space-lg);
+	color:var(--color-primary);
+}
+
+h2{
+	font-size:rem(8rem,5rem);
+	line-height:var(--space-sm);
+	color:var(--color-secondary);
+}
+
+h3{
+	font-size:rem(7rem,5rem);
+	line-height:var(--space-sm);
+	color:var(--color-secondary);
+}
+
+h4{
+	font-size:rem(6.5rem,5rem);
+	line-height:var(--space-sm);
+	color:var(--color-secondary);
+	margin-bottom:0;
+	/*margin used to remove space below heading*/
+}
+
+p{
+	font-size:rem(4.5rem,3rem);
+	line-height:var(--space-md);
+	color:var(--color-tertiary);
+}
+
+#language{
+	font-size:rem(4.5rem,3rem);
+	line-height:var(--space-md);
+	color:var(--color-tertiary);
+	margin-top:0.5rem;
+	/*Margin used to add space above paragraph*/
+}
+
+#mypic{
+	padding-top:20px;
+	/*Padding used to add space between the border of main and figure*/
+}
+
+#labellname{
+	margin-right:1px;
+	/*margin used to add space at the right of label*/
+}
+
+#labelemail{
+	margin-right:18px;
+	/*margin used to add space at the right of label*/
+}
+
+#labelinquiries{
+	margin-right:30px;
+	/*margin used to add space at the right of label*/
+}
+
+#labelmessage{
+	margin-right:18px;
+	/*margin used to add space at the right of label*/
+}
+
+#MyBackground{
+	font-size:rem(8rem,5rem);
+	line-height:var(--space-sm);
+	color:var(--color-secondary);
+	padding-top:10px;
+	/*padding used to add space between h1 and main border*/
+}
+
+blockquote{
+	font-size:rem(4.5rem,3rem);
+	line-height:var(--space-xlg);
+	color:var(--color-tertiary);
+}
+
+figcaption{
+	font-size:rem(3.8rem,3rem);
+	line-height:var(--space-sm);
+	color:var(--color-tertiary);
+}
+
+header{
+	background-color:#FFEA00;
+	padding-left:150px;
+	margin-bottom:0;
+	/*margin used to remove space below header*/
+}
+
+main{
+	background-color:#F48C06;
+	padding-left:90px;
+	margin-top:100px;
+	/*margin used to add space above main*/
+}
+
+footer{
+	background-color:#FFEA00;
+	padding-left:70px;
+}
+
+nav{
+	background-color:#FFAA00;
+	padding-left:70px;
+}
+
+a:link{
+
+}
+
+a:visited{
+
+}
+
+a:hover{
+
+}
+
+a:active{
+	
 }
