@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+
+html{
+	font-size:62.5%;
+}
+
+:root {
+ --color-primary: #E85D04;
+ --color-secondary: #6A040F;
+
+ --color-accent: #FAA307;
+ --color-accent2:#D00000;
+
+ --color-muted: #DCDCDD;
+ --color-muted2: #C5C3C6;
+ --color-muted3:#46494C;
+
+ --font-body: 'Quicksand', sans-serif;
+ --font-heading: 'Fredoka', sans-serif;
+
+ --space-sm: 0.5rem;
+ --space-md: 1.5rem;
+ --space-lg: 3rem;
+}
+
+*{
+	width:300px;
+  	height:100px;
+  	padding:0;
+  	margin:0;
+ 	border:1px #6A040F;
+	box-sizing:border-box;
+}
