@@ -129,9 +129,14 @@ header{
 
 main{
 	background-color:#F48C06;
+	border: 2px solid var(--color-muted);
+	padding: 10px;
+ 	border-radius: 25px;
+  	box-shadow: 5px 10px var(--color-primary);
 	padding-left:90px;
 	margin-top:100px;
-	/*margin used to add space above main*/
+	margin-bottom:50px;
+	/*margin used to add space above main and at the bottom of main*/
 }
 
 footer{
@@ -140,22 +145,35 @@ footer{
 }
 
 nav{
+	font-size:rem(8.0rem,5.0rem);
 	background-color:#FFAA00;
 	padding-left:70px;
-}
+	border: 2px solid var(--color-muted);
+  	padding: 10px;
+ 	border-radius: 25px;
+ }
+
+ button{
+ 	border-radius:25px;
+ }
 
 a:link{
-
+	color:#9a031e;
 }
 
 a:visited{
-
+	color:dc2f02;
 }
 
 a:hover{
-
+	color:7c6a0a;
 }
 
 a:active{
-	
+	color:var(--color-muted);
+}
+
+input:focus{
+	background-color:var(--color-muted3);
+	color:var(--color-muted);
 }
