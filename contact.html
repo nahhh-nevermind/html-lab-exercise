@@ -6,21 +6,21 @@
 	<meta charset = "UTF-8">
 	<meta name = "description" content = "Contact Me">
 </head>
-<body style="background-color:orange;">
+<body>
 	<header>
 		<h1>CONTACT ME</h1>
 	</header>
-	<main style="background-color:whitesmoke;">
+	<main>
 		<form action="#" method="post">
 			<fieldset>
-				<legend style="font-size:200%;text-align:center;color:#6a040f;">Contact Me:</legend>
+				<legend>Contact Me:</legend>
 				<label for = "fname">First Name:</label>
 				<input type="text" id=fname name=fname placeholder="First Name" required><br><br>
 
-				<label for = lname style = "padding-right:3px;">Last Name:</label>
+				<label for = lname>Last Name:</label>
 				<input type="text" id=lname name=lname placeholder="Last Name"><br><br>
 
-				<label for = email style = "padding-right:29px;">E-mail:</label>
+				<label for = email>E-mail:</label>
 				<input type="email" id=email name=email placeholder="E-Mail" required><br><br>
 
 				<label for = telNo>Telephone Number:</label>
@@ -51,7 +51,7 @@
 					<input type="radio" id="client" name = "role" value="client">
 					<label for="client">Client</label><br><br>
 				
-				<label for = inquiriestype style = "padding-right:45px;">What type of inquiries:</label>
+				<label for = inquiriestype>What type of inquiries:</label>
 				<select name = inquiriestype id = inquiriestype>
 					<optgroup label = "More About Me">
 						<option value = "Background">Background</option>
@@ -65,8 +65,8 @@
 					</optgroup>
 				</select><br><br>
 
-				<label for = "message" style = "padding-right:27px;">If you have any inquiries:</label>
-				<textarea id=message name=message maxlength=400 placeholder="Fill in your message here(400 characters)" style="border: 2px solid #6a040f;"></textarea><br><br>
+				<label for = "message">If you have any inquiries:</label>
+				<textarea id=message name=message maxlength=400 placeholder="Fill in your message here(400 characters)"></textarea><br><br>
 
 				<label for = urgent>How urgent is your inquiries?</label>
 				<input type = "number" id="urgent" name="urgent" placeholder="Type in from 1-10"><br><br>
@@ -76,7 +76,7 @@
 				<label for = privacy>I hereby agree that the information I submitted are valid and given permission to be contacted by the provided information</label><br><br>
 
 				<label for="satisfaction">How satisfied are you with this contact information?</label><br>
-				<input type="range" id="satisfaction" name = "satisfaction" min="1" max="10" step="1" value="6" style="accent-color:#d00000;"><br><br>
+				<input type="range" id="satisfaction" name = "satisfaction" min="1" max="10" step="1" value="6"><br><br>
 
 				<button type="submit">Submit</button>
 		</form>
