@@ -206,3 +206,46 @@ a:active{
 button{
     border-radius:2.5rem;
 }
+
+.page-grid{
+    display: grid;
+    gap:1.5rem;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+}
+
+.page-card{
+    display: grid;
+    grid-template-rows:6rem 5rem;
+    background-color: var(--color-muted);
+    border-radius: 1rem;
+    border: 0.2rem solid var(--color-accent);
+    color:var(--color-tertiary);
+    transition: transform 0.2s;
+}
+
+.layout{
+    display:grid;
+    grid-template-columns:1fr 280px;
+}
+
+aside {
+    display:flex;
+    flex-direction: column;
+    background-color: var(--color-muted);
+    padding: var(--space-sm);
+    color: var(--color-tertiary);
+}
+
+.span-page-card{
+    display:grid;
+    grid-column:span 2;
+    background-color: var(--color-muted);
+    border-radius: 1rem;
+    border: 0.2rem solid var(--color-accent);
+    color:var(--color-tertiary);
+    transition: transform 0.2s;
+}
+
+.page-card:hover, .span-page-card:hover {
+    transform: translateY(-4px); 
+}
