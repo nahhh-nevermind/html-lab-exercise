@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
 
+/* ============================================
+ BREAKPOINTS
+ mobile-first base: 320px and up (default)
+ tablet: @media (min-width: 600px)
+ desktop: @media (min-width: 1024px)
+ ============================================ */
+/* --- Base styles (mobile) --- */
+
 :root {
  --color-primary: #FAA307;
  --color-secondary: #ff8500;
@@ -99,16 +107,17 @@ caption{
 header{
     background-color:var(--color-secondary);
     padding: var(--space-sm);
-    padding-left:7rem;
+    padding-left:var(--space-sm);
     color:var(--color-accent) ;
     border-radius: 2.5rem;
     margin-bottom:var(--space-lg);
     /*margin is used to ensure that header does not clash with main*/
     display:flex;
-    flex-direction:row;
+    flex-direction:column;/*2.Header collapse into a single column*/
     align-items:center;
     justify-content: space-between;
 }
+
 
 nav{
     background-color:var(--color-primary);
@@ -117,7 +126,7 @@ nav{
     color:var(--color-muted3) ;
     border-radius: 2.5rem;
     display:flex;
-    flex-direction:row;
+    flex-direction:column;/*1.Nav-links collapse to a vertical stack*/
     align-items:center;
     justify-content: space-between;
     position:sticky;
@@ -210,7 +219,7 @@ button{
 .page-grid{
     display: grid;
     gap:1.5rem;
-    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    grid-template-columns:1fr;/*3.Grid Layouts revert to column*/
 }
 
 .page-card{
@@ -225,7 +234,7 @@ button{
 
 .layout{
     display:grid;
-    grid-template-columns:1fr 280px;
+    grid-template-columns:1fr;/*4.Grid Layouts revert to column*/
 }
 
 aside {
@@ -248,4 +257,41 @@ aside {
 
 .page-card:hover, .span-page-card:hover {
     transform: translateY(-4px); 
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+@media(min-width: 600px){
+    .page-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    header{
+        flex-direction:row;
+        justify-content:space-between;
+        text-align: left;
+    }
+}
+
+@media(min-width: 1024px){
+    nav, .nav-link-list{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    header{
+        flex-direction:row;
+    }
+    .page-grid{
+        grid-template-columns:repeat(3, 1fr);;
+    }
+
+    .layout{
+        grid-template-columns:1fr 280px;
+    }
+
+    header, nav, main, footer {
+        padding-left: 7rem;
 }
