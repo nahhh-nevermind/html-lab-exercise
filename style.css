@@ -86,7 +86,15 @@ small{
     color:var(--color-tertiary);
 }
 
-blockquote{
+blockquote::after{
+    content:"Jack Welch";
+    font-size:1.5rem;
+    line-height:4rem;
+    color:var(--color-tertiary);
+}
+
+#ContactTitle::Before{
+    content:"Are you interested? - ";
     font-size:1.5rem;
     line-height:4rem;
     color:var(--color-tertiary);
@@ -131,7 +139,7 @@ nav{
     justify-content: space-between;
     position:sticky;
     top:0;
-    z-index:100;
+    z-index:1000;
     flex-wrap:wrap;
     gap:2rem;
 }
@@ -214,6 +222,16 @@ a:active{
 
 button{
     border-radius:2.5rem;
+    transition:color 0.5s, background-color 0.5s;
+}
+
+button:hover{
+    color:var(--color-muted);
+    background-color:var(--color-accent3);
+}
+
+button:active{
+    transform:scale(0.97);
 }
 
 .page-grid{
@@ -294,4 +312,37 @@ img{
 
     header, nav, main, footer {
         padding-left: 7rem;
+    }
+}
+
+input, textarea, select{
+    padding:2rem;
+    border:0.2rem solid var(--color-accent2);
+    border-radius:2rem;
+    font-family:var(--font-body);
+}
+
+input:focus, textarea:focus, select:focus{
+    padding:2rem;
+    border:0.2rem solid var(--color-accent2);
+    box-shadow: 0.5rem 1rem var(--color-accent3);
+    color:var(--color-muted);
+    border-radius:2rem;
+    font-family:var(--font-body);
+}
+
+tbody tr:nth-child(even){
+    background-color:var(--color-muted);
+}
+
+tbody tr:nth-child(odd){
+    background-color:var(--color-muted2);
+}
+
+li:first-child{
+    border-top:0;
+}
+
+li:last-child{
+    border-bottom:0;
 }
