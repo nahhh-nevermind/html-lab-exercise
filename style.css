@@ -148,6 +148,16 @@ nav a:hover{
     background-color:var(--color-accent3);
 }
 
+.sname{
+    font-size:2rem;
+    color:var(--color-accent3);
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .profile{
     width:10rem;
     height:10rem;
@@ -193,6 +203,6 @@ a:active{
     color:var(--color-muted);
 }
 
- button{
+button{
     border-radius:2.5rem;
- }
+}
